@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>School UI</title>
+    <link rel="stylesheet" href="Style.css"/>
+</head>
+<body>
+    <h1>School Catalog</h1>
+
+    <div id="formdiv">
+        <label> School Name: </label>
+        <input type="text" id="schoolname" />
+        <label> Headmaster: </label>
+        <input type="text" id="headmaster" />
+        <label> Location: </label>
+        <input type="text" id="location" />
+        <label> Phone: </label>
+        <input type="text" id="phone" />
+        <button id="button1" type="button" onclick="create()"> Add School</button>
+    </div>
+
+    <div id="updateformdiv">
+        <label> School Name: </label>
+        <input type="text" id="schoolnameupdate" />
+        <label> Headmaster: </label>
+        <input type="text" id="headmasterupdate" />
+        <label> Location: </label>
+        <input type="text" id="locationupdate" />
+        <label> Phone: </label>
+        <input type="text" id="phoneupdate" />
+        <button id="button1" type="button" onclick="update()"> Update School</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>SchID</th>
+                <th>Name</th>
+                <th>Headmaster</th>
+                <th>Location</th>
+                <th>Phone</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="resultarea">
+        </tbody>
+    </table>
+
+
+
+    <script src="Script.js"></script>
+</body>
+</html>

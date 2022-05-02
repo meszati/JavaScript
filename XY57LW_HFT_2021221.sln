@@ -28,6 +28,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Others", "Others", "{D4AF41
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JSClient", "JSClient", "{4ECB04A7-6ECB-4BAB-8B46-26525A3416A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSClient", "JSClient\JSClient.csproj", "{5AE38834-5A66-4F99-B23E-3FEF137B0699}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +66,10 @@ Global
 		{2CEC41D1-3476-4585-9873-DD67B045B735}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CEC41D1-3476-4585-9873-DD67B045B735}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CEC41D1-3476-4585-9873-DD67B045B735}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AE38834-5A66-4F99-B23E-3FEF137B0699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE38834-5A66-4F99-B23E-3FEF137B0699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE38834-5A66-4F99-B23E-3FEF137B0699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE38834-5A66-4F99-B23E-3FEF137B0699}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +82,7 @@ Global
 		{057F3C12-E684-4AD9-8859-B03ECAB2B4EA} = {07A24A79-17E3-4235-BAB1-21405AF3B596}
 		{C1F0A445-AE02-4DB0-9F6B-855E55ABD118} = {07A24A79-17E3-4235-BAB1-21405AF3B596}
 		{2CEC41D1-3476-4585-9873-DD67B045B735} = {07A24A79-17E3-4235-BAB1-21405AF3B596}
+		{5AE38834-5A66-4F99-B23E-3FEF137B0699} = {4ECB04A7-6ECB-4BAB-8B46-26525A3416A9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7CB98EFA-BC2D-43B3-9C46-1EB3F06E46A7}

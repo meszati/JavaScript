@@ -36,7 +36,7 @@ namespace XY57LW_HFT_2021221.Data
                 .HasOne(student => student.Sch)
                 .WithMany(school => school.Students)
                 .HasForeignKey(student => student.SchoolID)
-                .OnDelete(DeleteBehavior.Restrict);
+                .OnDelete(DeleteBehavior.Cascade);
             });
 
             modelBuilder.Entity<Student>(entity =>
@@ -45,7 +45,7 @@ namespace XY57LW_HFT_2021221.Data
                 .HasOne(student => student.Netfit)
                 .WithOne(measurement => measurement.Student)
                 .HasForeignKey<Student>(student => student.NetfitID)
-                .OnDelete(DeleteBehavior.Restrict);
+                .OnDelete(DeleteBehavior.Cascade);
             });
 
             School jedlik = new School() { SchID = 1, Name = "Jedlik Ányos Gimnázium", Headmaster = "Bese Benő", Location = "Budapest, Táncsics Mihály utca 92.", Phone = "06 1 276 1133" };
