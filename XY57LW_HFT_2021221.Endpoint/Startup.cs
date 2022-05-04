@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using XY57LW_HFT_2021221.Logic;
 using XY57LW_HFT_2021221.Repository;
 using XY57LW_HFT_2021221.Data;
+using XY57LW_HFT_2021221.Endpoint.Services;
 
 namespace XY57LW_HFT_2021221.Endpoint
 {
@@ -27,6 +28,7 @@ namespace XY57LW_HFT_2021221.Endpoint
             services.AddTransient<IStudentRepository, StudentRepository>();
             services.AddTransient<IMeasurementRepository, MeasurementRepository>();
             services.AddTransient<StudentNetfitDbContext, StudentNetfitDbContext>();
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +50,7 @@ namespace XY57LW_HFT_2021221.Endpoint
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<SignalRHub>("/hub");
             });
         }
     }
